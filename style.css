@@ -96,6 +96,7 @@ a {
     margin-left: 3.5%;
     margin-right: 3.5%;
 
+    filter: brightness(85%);
     -webkit-filter: brightness(85%);
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
@@ -105,6 +106,7 @@ a {
 }
 
 .project:hover {
+    filter: brightness(100%);
     -webkit-filter: brightness(100%);
     box-shadow: 0 0 0 2px #000000;
     transform: translateY(-3px);
