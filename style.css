@@ -28,6 +28,8 @@ header #background-img {
 header #pb {
     border-radius: 50%;
     position: absolute;
+    width: 150px;
+    height: 150px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -37,7 +39,7 @@ header h1 {
     color: white;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50.3%;
     transform: translate(-50%, -50%);
 }
 
@@ -73,18 +75,53 @@ header h1 {
 }
 
 .project {
+    box-shadow: 2px 2px 1px 2px #888888;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
     margin-top: 80px;
     background-color: white;
     width: 250px;
     height: 250px;
     margin-left: 3.5%;
     margin-right: 3.5%;
+
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.project:hover {
+    -webkit-filter: brightness(100%);
+}
+
+.project p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.project h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #project-title {
     font-size: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.project-image {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
 }
 
 @media only screen and (max-width: 1100px) {
