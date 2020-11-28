@@ -59,7 +59,24 @@ a, a:visited {
 }
 
 #links {
-    font-size: 1vmax;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.fa {
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform: .5s;
 }
 
 #about-me-pb-text-container {
