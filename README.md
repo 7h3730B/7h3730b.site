@@ -1,6 +1,6 @@
 # My little shitty website
 
 ## TODO:
-- [ ] Colors
+- [x] Colors
 - [ ] Links
 - [x] Responsivness
