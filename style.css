@@ -2,6 +2,7 @@ body, div {
     top: 0;
     right: 0;
     left: 0;
+    margin: 0;
 }
 
 a, a:visited {
@@ -14,15 +15,15 @@ a, a:visited {
     flex-flow: column;
 }
 
-.site-item, #blur, #background-img {
+.site-item, #blur {
     width: 100%;
     height: 100vh;
 }
 
-#blur, #background-img {
+#blur {
     position: absolute;
-    background-color: red;
-    opacity: 80%;
+    background-color: #D8CAAE;
+    opacity: 100%;
 }
 
 #header-container, #about-me-pb-text-container {
@@ -32,23 +33,24 @@ a, a:visited {
 }
 
 #pb-container {
-    color: white;
+    color: #643A15;
     z-index: 1;
     text-align: center;
 }
 
 #pb-container h1 {
-    font-size: 2vmax;
+    font-size: 3vmax;
 }
 
 .pb {
-    height: 10vmax;
-    width: 10vmax;
+    height: 18vmax;
+    width: 18vmax;
     border-radius: 50%;
 }
 
 #about-me-container {
-    justify-content: space-evenly;
+    color: #1E0E05;
+    background-color: #99652C;
 }
 
 .title {
@@ -61,7 +63,6 @@ a, a:visited {
 }
 
 #about-me-pb-text-container {
-    background-color: green;
     flex-flow: row wrap;
     margin-top: 8vmax;
     margin-bottom: 8vmax;
@@ -71,12 +72,8 @@ a, a:visited {
     width: 100%;
 }
 
-#about-me-pb-text-container .pb {
-    height: 18vmax;
-    width: 18vmax;
-}
-
 .text {
+    color: #1E0E05;
     text-align: center;
     width: 60%;
     margin-left: 40px;
@@ -89,11 +86,8 @@ hr {
     border-radius: 5px;
 }
 
-#projects-container {
-    background-color: green;
-}
-
 #projects-container, #projects {
+    background-color: #643A15;
     width: 100%;
     min-height: 100vh;
 }
@@ -104,20 +98,20 @@ hr {
 }
 
 #projects {
-    background-color: red;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 .project {
-    background-color: white;
+    color: #1E0E05;
+    background-color: #ADAF95;
     width: 330px;
     height: 330px;
     margin-left: 10px;
     text-align: center;
-    box-shadow: 2px 2px 1px 2px #888888;
-    border: 2px solid black;
+    box-shadow: 2px 2px 1px 2px #A17F53;
+    border: 2px solid #1E0E05;
     border-radius: 25px;
     margin-top: 40px;
     margin-left: 3.5%;
@@ -135,7 +129,7 @@ hr {
 .project:hover {
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
-    box-shadow: 0 0 0 2px #000000;
+    box-shadow: 0 0 0 2px #1E0E05;
     transform: translateY(-3px);
 }
 
@@ -155,6 +149,10 @@ hr {
     #about-me-pb-text-container {
         flex-flow: column wrap;
     }
+    #about-me-pb-text-container .pb {
+        margin-bottom: 10%;
+    }
+
     .text {
         margin-top: 10px;
         width: 90%;
