@@ -2,6 +2,6 @@
 This is my crapy website!
 
 ## TODO:
-- Colors
-- Links
-- Responsivness
+- [ ] Colors
+- [ ] Links
+- [x] Responsivness
