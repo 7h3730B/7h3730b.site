@@ -4,3 +4,4 @@
 - [x] Colors
 - [ ] Links
 - [x] Responsivness
+- [x] Icons
