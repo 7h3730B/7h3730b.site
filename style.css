@@ -45,16 +45,15 @@ a, a:visited {
 
 #pb-container h1 {
     font-size: 3vmax;
-    font: bold 300% Consolas, Monaco, monospace;
+    font: bold Consolas, Monaco, monospace;
     border-right: .1em solid #643A15;
-    width: 16.5em; 
-    width: 36ch;
+    width: 25ch;
     margin: 2em 1em;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: typing 5s steps(36, end),
+    -webkit-animation: typing 3s steps(26, end),
     blink-caret .5s step-end infinite alternate;
-    animation: typing 5s steps(36, end),
+    animation: typing 3s steps(26, end),
     blink-caret .5s step-end infinite alternate;
 }
 
@@ -139,7 +138,6 @@ hr {
     background-color: #ADAF95;
     width: 330px;
     height: 330px;
-    margin-left: 10px;
     text-align: center;
     box-shadow: 2px 2px 1px 2px #A17F53;
     border: 2px solid #1E0E05;
@@ -201,5 +199,23 @@ hr {
     .project {
         align-self: center;
         margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .project .project-image {
+        margin-top: 10px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+    .project p {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .project {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
     }
 }
