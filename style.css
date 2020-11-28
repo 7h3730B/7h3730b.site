@@ -1,3 +1,8 @@
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
 body, div {
     top: 0;
     right: 0;
@@ -40,6 +45,17 @@ a, a:visited {
 
 #pb-container h1 {
     font-size: 3vmax;
+    font: bold 300% Consolas, Monaco, monospace;
+    border-right: .1em solid #643A15;
+    width: 16.5em; 
+    width: 36ch;
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(36, end),
+    blink-caret .5s step-end infinite alternate;
+    animation: typing 5s steps(36, end),
+    blink-caret .5s step-end infinite alternate;
 }
 
 .pb {
@@ -112,12 +128,10 @@ hr {
 #projects {
     width: 100%;
     min-height: 70%;
-}
-
-#projects {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .project {
