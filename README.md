@@ -1,5 +1,4 @@
-# 7h3730B.github.io
-This is my crapy website!
+# My little shitty website
 
 ## TODO:
 - Colors
