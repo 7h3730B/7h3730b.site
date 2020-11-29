@@ -4,6 +4,7 @@
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 body, div {
+    font: Consolas, Monaco, monospace;
     top: 0;
     right: 0;
     left: 0;
@@ -45,7 +46,7 @@ a, a:visited {
 
 #pb-container h1 {
     font-size: 3vmax;
-    font: bold Consolas, Monaco, monospace;
+    font: bold;
     border-right: .1em solid #643A15;
     width: 25ch;
     margin: 2em 1em;
